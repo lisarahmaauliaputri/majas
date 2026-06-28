@@ -1,0 +1,35 @@
+/* ========================================
+   style.css - Majasku
+   Kustom CSS di luar Tailwind
+   ======================================== */
+
+/* ---------- Global ---------- */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ---------- Navbar Active State ---------- */
+.nav-link.active {
+    background-color: #4f46e5; /* indigo-600 */
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Animasi Tambahan (Opsional) ---------- */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+/* ---------- Kuis Container ---------- */
+#quiz-box .border-slate-200 {
+    border-color: #e2e8f0;
+}
+
+/* ---------- Responsive Fine-Tuning ---------- */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+}
